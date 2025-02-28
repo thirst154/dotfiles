@@ -4,7 +4,11 @@ curl
 eza
 cowsay
 fastfetch
+vim
 neovim
 fortune-mod
 bat
 zsh
+btop
+stow
+gh
