@@ -114,4 +114,20 @@ return {
 			key("n", "<leader>tf", ":ToggleTerm direction=float<CR>", { noremap = true, silent = true })
 		end,
 	},
+
+	{
+		"brenoprata10/nvim-highlight-colors",
+		config = function()
+			require("nvim-highlight-colors").setup({
+				render = "background",
+				enable_named_colors = true,
+				enable_tailwind = true,
+				enable_hex = true,
+				enable_rgb = true,
+				enable_hsl = true,
+				enable_hsla = true,
+				enable_rgba = true,
+			})
+		end,
+	},
 }
