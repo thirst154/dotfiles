@@ -103,4 +103,15 @@ return {
 			vim.keymap.set({ "n", "v", "i" }, "<A-0>", "<Cmd>BufferLast<CR>", opts)
 		end,
 	},
+	{
+		"akinsho/toggleterm.nvim",
+		version = "*",
+		config = function()
+			require("toggleterm").setup({})
+
+			local key = vim.keymap.set -- create a shortcut for toggleterm
+			key("n", "<leader>tt", ":ToggleTerm<CR>", { noremap = true, silent = true })
+			key("n", "<leader>tf", ":ToggleTerm direction=float<CR>", { noremap = true, silent = true })
+		end,
+	},
 }
