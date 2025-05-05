@@ -24,7 +24,7 @@ alias config="nvim ~/.config"
 
 alias cowf="fortune | cowsay"
 
-alias cat="batcat"
+alias cat="bat"
 
 alias vim="nvim"
 alias vi="nvim"
@@ -44,3 +44,10 @@ export PATH=$PATH:/usr/games
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# bun completions
+[ -s "/home/thirst/.bun/_bun" ] && source "/home/thirst/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

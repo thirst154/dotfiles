@@ -1,0 +1,49 @@
+
+;; Remove splash screen
+(setq inhibit-startup-message t) 
+
+;; Turn off screen
+(menu-bar-mode -1)
+(tool-bar-mode -1)
+(scroll-bar-mode -1)
+
+;; Line numbers
+(global-display-line-numbers-mode 1)
+
+;; Theme
+(load-theme 'deeper-blue t)
+
+;; Remeber recent files
+(recentf-mode 1)
+
+(set-face-font 'default "Hack Nerd Font")
+
+;; Packages
+
+(setq package-list '(
+		     evil
+		     company
+		     ;; Which Key
+		     ;; Theme
+		     
+		     ))
+
+;; Initialize package.el
+(require 'package)
+(setq package-archives '(("melpa" . "https://melpa.org/packages/")
+                         ("gnu" . "https://elpa.gnu.org/packages/")
+                         ("org" . "https://orgmode.org/elpa/")))
+(package-initialize)
+
+;; Ensure packages are installed
+(unless package-archive-contents
+  (package-refresh-contents))
+
+;; Install missing packages
+(dolist (package package-list)
+  (unless (package-installed-p package)
+    (package-install package)))
+
+(require 'evil)
+(evil-mode t)
+

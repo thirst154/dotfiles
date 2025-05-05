@@ -81,7 +81,7 @@ return {
 			require("barbar").setup()
 
 			local key = vim.keymap.set -- create a shortcut for barbar
-			key("n", "<leader>bc", ":BufferClose<CR>", { noremap = true, silent = true })
+			key("n", "<leader>bb", ":BufferClose<CR>", { noremap = true, silent = true })
 			key("n", "<leader>br", ":BufferRestore<CR>", { noremap = true, silent = true })
 			key("n", "<leader>bn", ":BufferNext<CR>", { noremap = true, silent = true })
 			key("n", "<leader>bp", ":BufferPrevious<CR>", { noremap = true, silent = true })
