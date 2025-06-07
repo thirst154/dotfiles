@@ -126,6 +126,7 @@
 
     # Programming Languages
     go
+    rustup
 
     # WM Packages
 
