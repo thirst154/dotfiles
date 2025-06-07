@@ -114,6 +114,8 @@
     fortune
     bat
     zsh
+    zsh-autocomplete
+
     btop
     gh
     fzf
