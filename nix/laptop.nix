@@ -138,6 +138,7 @@
     gearlever
     cozy
     tor-browser
+    transmission_4
     vscode
 
     # System Packages
