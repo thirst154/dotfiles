@@ -147,6 +147,7 @@
 
     # System Packages
     ffmpeg_6-full
+    bc
 
     # Fonts
     barlow

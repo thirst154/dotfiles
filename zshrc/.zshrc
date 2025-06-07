@@ -21,6 +21,7 @@ alias la="ls -a"
 alias lla="ls -la"
 alias zshrc="nvim ~/.zshrc"
 alias config="nvim ~/.config"
+alias rebuild="./dotfiles/nix/rebuild.sh"
 
 alias cowf="fortune | cowsay"
 
