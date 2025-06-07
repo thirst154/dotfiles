@@ -50,6 +50,9 @@
   # Enable Flatpak
   services.flatpak.enable = true;
 
+  # ZSH
+  programs.zsh.enable = true;
+
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "gb";
