@@ -53,6 +53,9 @@
   # ZSH
   programs.zsh.enable = true;
 
+  # Steam
+  programs.steam.enable = true;
+
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "gb";
@@ -144,6 +147,9 @@
     tor-browser
     torrential
     vscode
+
+    # Games
+    atlauncher
 
     # System Packages
     ffmpeg_6-full
