@@ -129,6 +129,7 @@
     kitty
     rofi
     waybar
+    bibata-cursors
 
     # Desktop Packages
 
