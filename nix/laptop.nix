@@ -128,7 +128,11 @@
     # Programming Languages
     go
     rustup
+    rustc
+    cargo
+
     nodejs_24
+    unzip
 
     # WM Packages
 
