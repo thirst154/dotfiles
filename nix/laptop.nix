@@ -128,6 +128,7 @@
     # Programming Languages
     go
     rustup
+    nodejs_24
 
     # WM Packages
 
