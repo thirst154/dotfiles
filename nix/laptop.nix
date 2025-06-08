@@ -130,6 +130,7 @@
     rustup
     rustc
     cargo
+    python314
 
     nodejs_24
     unzip
