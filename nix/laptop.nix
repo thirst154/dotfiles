@@ -52,6 +52,9 @@
 
   # ZSH
   programs.zsh.enable = true;
+  users.defaultUserShell = pkgs.zsh;
+  users.users.thirst.shell = pkgs.zsh;
+  #userr.users.thirst.useDefaultShell = true;
 
   # Steam
   programs.steam.enable = true;
@@ -96,8 +99,6 @@
       #  thunderbird
     ];
   };
-
-  users.defaultUserShell = pkgs.zsh;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
