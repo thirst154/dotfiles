@@ -127,6 +127,7 @@
 
     # Programming Languages
     go
+    bun
     rustup
     rustc
     cargo
