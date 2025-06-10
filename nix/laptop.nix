@@ -156,6 +156,7 @@
     tor-browser
     torrential
     vscode
+    obsidian
 
     # Games
     atlauncher
