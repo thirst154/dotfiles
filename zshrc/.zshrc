@@ -31,8 +31,11 @@ alias vi="nvim"
 
 alias c="code"
 
+alias goland="flatpak run com.jetbrains.GoLand"
 
 alias air='$(go env GOPATH)/bin/air'
+
+alias zed="flatpak run dev.zed.Zed"
 
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$HOME/.local/bin:$PATH
@@ -40,7 +43,7 @@ export PATH=$PATH:/usr/local/go/bin:$HOME/.cargo/bin
 export PATH=$PATH:"$HOME/.cargo/env"
 export PATH=$PATH:"$HOME/.local/share/coursier/bin"
 export PATH=$PATH:/usr/games
-
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
