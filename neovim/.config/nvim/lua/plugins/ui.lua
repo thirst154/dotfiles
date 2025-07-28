@@ -50,10 +50,4 @@ return {
 			},
 		},
 	},
-
-	-- Animate cursor
-	{
-		"sphamba/smear-cursor.nvim",
-		opts = {},
-	},
 }
