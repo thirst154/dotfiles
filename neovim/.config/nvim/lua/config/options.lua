@@ -18,3 +18,8 @@ vim.opt.termguicolors = true
 
 -- Netrw
 vim.g.netrw_banner = 0
+
+-- Spelling
+
+vim.opt.spell = true
+vim.opt.spelllang = "en_uk"

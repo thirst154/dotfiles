@@ -31,6 +31,8 @@ alias vi="nvim"
 
 alias c="code"
 
+alias aspell="aspell --lang=en_GB"
+
 alias goland="flatpak run com.jetbrains.GoLand"
 
 alias air='$(go env GOPATH)/bin/air'
