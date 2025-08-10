@@ -1,54 +1,94 @@
-/* The name of the window itself */
-#window {
-    background-color: rgba(24, 24, 24, 0.6);
-    box-shadow:
-        0 10px 15px -3px rgba(0, 0, 0, 0.1),
-        0 4px 6px -4px rgba(0, 0, 0, 0.1);
-    border-radius: 1rem;
-    font-size: 1.2rem;
-    /* The name of the box that contains everything */
+/* Everforest */
+@define-color accent #A7C080;
+@define-color txt #D3C6AA;
+@define-color bg #2B3339;
+@define-color bg2 #333C43;
+
+* {
+  font-family: "CaskaydiaCove Nerd Font mono";
+  font-size: 14px;
 }
-#window #outer-box {
-    /* The name of the search bar */
-    /* The name of the scrolled window containing all of the entries */
+
+/* Window */
+window {
+  margin: 0px;
+  padding: 10px;
+  border: 3px solid @accent;
+  border-radius: 7px;
+  background-color: @bg;
+  animation: slideIn 0.5s ease-in-out both;
 }
-#window #outer-box #input {
-    background-color: rgba(24, 24, 24, 0.6);
-    color: #f2f2f2;
-    border: none;
-    border-bottom: 1px solid rgba(24, 24, 24, 0.2);
-    padding: 0.8rem 1rem;
-    font-size: 1.5rem;
-    border-radius: 1rem 1rem 0 0;
+
+/* Slide In */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
-#window #outer-box #input:focus,
-#window #outer-box #input:focus-visible,
-#window #outer-box #input:active {
-    border: none;
-    outline: 2px solid transparent;
-    outline-offset: 2px;
+
+/* Inner Box */
+#inner-box {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  background-color: @bg;
+  animation: fadeIn 0.5s ease-in-out both;
 }
-#window #outer-box #scroll {
-    /* The name of the box containing all of the entries */
+
+/* Fade In */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
-#window #outer-box #scroll #inner-box {
-    /* The name of all entries */
-    /* The name of all boxes shown when expanding  */
-    /* entries with multiple actions */
+
+/* Outer Box */
+#outer-box {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  background-color: @bg;
 }
-#window #outer-box #scroll #inner-box #entry {
-    color: #fff;
-    background-color: rgba(24, 24, 24, 0.1);
-    padding: 0.6rem 1rem;
-    /* The name of all images in entries displayed in image mode */
-    /* The name of all the text in entries */
+
+/* Scroll */
+#scroll {
+  margin: 0px;
+  padding: 10px;
+  border: none;
 }
-#window #outer-box #scroll #inner-box #entry #img {
-    width: 1rem;
-    margin-right: 0.5rem;
+
+/* Input */
+#input {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  color: @accent;
+  background-color: @bg2;
+  animation: fadeIn 0.5s ease-in-out both;
 }
-#window #outer-box #scroll #inner-box #entry:selected {
-    color: #fff;
-    background-color: rgba(255, 255, 255, 0.1);
-    outline: none;
+
+/* Text */
+#text {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  color: @txt;
+  animation: fadeIn 0.5s ease-in-out both;
+}
+
+/* Selected Entry */
+#entry:selected {
+  background-color: @accent;
+}
+
+#entry:selected #text {
+  color: @bg;
 }

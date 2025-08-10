@@ -2,7 +2,7 @@
   "layer": "top",
   "position": "top",
   "height": 28,
-  "modules-left": ["custom:dot"],
+  "modules-left": ["hyprland/workspaces"],
   "modules-center": ["clock"],
   "modules-right": ["battery", "custom:gpu", "network", "pulseaudio", "tray"],
 
