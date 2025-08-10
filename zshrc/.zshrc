@@ -53,9 +53,11 @@ export NVM_DIR="$HOME/.nvm"
 # bun completions
 [ -s "/home/thirst/.bun/_bun" ] && source "/home/thirst/.bun/_bun"
 
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-. "/home/thirst/.deno/env"
-
 fastfetch
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /home/thirst/.dart-cli-completion/zsh-config.zsh ]] && . /home/thirst/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
+
+eval "$(/home/thirst/.local/bin/mise activate zsh)"
